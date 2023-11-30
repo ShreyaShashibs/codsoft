@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body,html{
+margin:0;
+padding:0px;
+
+}
+
+header{
+
+background-color:green;
+padding:5px;
+text-align:right;
+
+}
+ul{
+list-style-type:none;
+
+padding:0;
+
+
+
+
+}
+.scrolling {
+      animation: smoothScroll 10s linear infinite; /* Adjust the time according to your preference */
+    }
+
+    @keyframes smoothScroll {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(-100vh); /* Adjust to scroll the full height of the page */
+      }
+    }
+
+li{
+display:inline;
+
+font-size:20px;
+padding-left:20px;
+
+}
+a{
+color:white;
+text-decoration:none;
+}
+footer{
+background-color:green;
+}
+h1{
+padding-left:65px;
+padding-top:70px;
+font-family:Arial;
+}
+h3{
+padding-left:65px;
+font-family:Arial;
+}
+#about{
+
+width:35%;
+}
+#main{
+display:flex;
+
+}
+#image{
+margin-left:40%;
+padding-top:70px;
+padding-right:10px;
+position :relative;
+}
+#hi{
+float:left;
+}
+
+header img{
+float:right;
+border-radius:50%;
+position:absolute;
+animation:rotation 4s infinite linear;
+}
+@keyframes rotation{
+from{
+transform:rotate(0deg);
+}
+to{
+transform:rotate(360deg);
+}
+}
+#hello{
+border-radius:25%;
+}
+#skill{
+padding-left:930px;
+margin-top:100px;
+}
+h2{
+font-size:30px;
+font-family:Arial;
+}
+#skill ul li::before{
+content:"\2606";
+font-family:Arial;
+color:solid black;
+
+}
+.skill-list{
+list-style-type:none;
+padding:0;
+}
+.skill-list-item{
+margin-bottom:20px;
+}
+.skill-name{
+font-weight:bold;
+}
+.skill-bar{
+backgroun-color:gold;
+height:20px;
+border-radius:20px;
+position:relative;
+}
+.skill-progress{
+background-color:green;
+height:100%;
+border-radius:20px;
+width:0;
+transition:width 1s ease-in-out;
+}
+.skill-text{
+position:absolute;
+top:0;
+right:10px;
+line-height:20px;
+font-size:14px;
+color:black;
+font-weight:bold;
+}
+.container{
+width:50%;
+padding-left:65px;
+}
+.project{
+padding-left:65px;
+margin-top:40px;
+height:300px;
+}
+.Project{
+display:block;
+padding-top:30px;
+
+
+
+}
+.project1{
+margin-left:65px;
+
+height:20px;
+border:solid black 1px;
+
+}
+.project2{
+margin-left:110px;
+
+height:20px;
+border:solid black 1px;
+
+}
+.project3{
+margin-left:100px;
+
+height:20px;
+border:solid black 1px;
+
+}
+#cr{
+padding-left:65px;
+}
+#contact{
+padding:10px;
+border:solid black 2px;
+background-color:green;
+border-radius:25%;
+
+}
+#resume{
+padding:10px;
+margin-left:30px;
+border:solid black 2px;
+background-color:green;
+border-radius:25%;
+}
+footer{
+margin-top:40px;
+padding:5px;
+margin-buttom:10px;
+}
+.link{
+color:black;
+display:inline;
+padding-right:10px;
+}
+.link2{
+color:black;
+display:inline;
+padding-right:10px;
+}
+.link3{
+color:black;
+display:inline;
+padding-right:10px;
+}
+</style>
+
+ <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Add the 'scrolling' class to the body when the page loads
+      document.body.classList.add('scrolling');
+    });
+</script>
+
+</head>
+<body>
+<header>
+<div id="hi">
+<img id="i" src="shreya4.jpg" alt="hello" width="150" height="80">
+</div>
+<nav>
+<ul>
+<li><strong><a href="#" >Home</a></strong></li>
+
+<li><strong><a href="#">Skills</a></strong></li>
+
+<li><strong><a href="#">Projects</a></strong></li>
+
+<li><strong><a href="#" >Resume</a></strong></li>
+
+<li><strong><a href="#" >Contact</a></strong></li>
+</ul>
+</nav>
+</header>
+<div id="main">
+<div id="about">
+<h1>  Hi,I am Shreya </h1>
+<h3>A passionate Web Developer with the good knowlegde of html/css/javascript,Interested in developing web based Applications
+</h3>
+</div>
+<div id="image">
+<img id="hello" src="image3.jpg" alt="My profile" width="200" height="200">
+</div>
+</div>
+<div id="cr">
+<button type="Submit" id="contact"><a href="#">Contact</a></button>
+<button type="Submit" id="resume"><a href="#">Resume</a></button>
+</div>
+<div id="skill">
+<h2><u>Skills</u></h2>
+<ul><b>
+<li><b>basic programming language like C,java and python<b></li><br>
+<li><b>HTML,CSS and javascript<b></li>
+</ul>
+</div>
+<div class="container">
+<ul class="skill-list">
+<li class="skill-list-item">
+<span class="skill-name">programming</span>
+<div class="skill-bar">
+<div class="skill-progress" style="width:60%;"</div>
+<div class="skill-text">50%</div>
+</div>
+
+</li>
+<li class="skill-list-item">
+<span class="skill-name">HTML</span>
+<div class="skill-bar">
+<div class="skill-progress" style="width:30%;"</div>
+<div class="skill-text">30%</div>
+</div>
+</li>
+<li class="skill-list-item">
+<span class="skill-name">CSS</span>
+<div class="skill-bar">
+<div class="skill-progress" style="width:45%;"</div>
+<div class="skill-text">45%</div>
+</div>
+</li>
+<li class="skill-list-item">
+<span class="skill-name">Javascript</span>
+<div class="skill-bar">
+<div class="skill-progress" style="width:30%;"</div>
+<div class="skill-text">30%</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="project">
+<h2><u>Projects</u></h2>
+<div class="Project">
+
+<h3 class="link">1.Landing page &#8594</h3>
+<a href="https://github.com/ShreyaShashibs/task-level1.git" class="link"><u>View Project</u></a>
+<br><br><br>
+
+<h3 class="link2">2.PortFolio    &#8594</h3>
+<a href="https://github.com/ShreyaShashibs/task2-level1.git" class="link2"><u>View Project</u></a>
+<br><br><br>
+<h3 class="link3">3.Temperature Converter  &#8594</h3>
+<a href="https://github.com/ShreyaShashibs/task3-level1.git" class="link3"><u>View Project</u></a>
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
